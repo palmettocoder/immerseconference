@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #dfe8ec;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* Header */
+header {
+    background: #d8d3d3;
+    color: #50b8ce;
+    padding: 10px;
+    min-height: 70px;
+}
+/* Nav Text */
+
+.logo{
+    float: left; 
+    vertical-align: auto;  
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  align-items: right;
+}
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  color: #50b8ce;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:#50b8ce;
+  margin: 5px;
+}
+
+/* Hero Image */
+.hero{
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: center ;
+    height: 200%;
+    width: 100%;
+}
+
+/* Event Cards*/
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  /* Float columns side by side - */
+  .column, .speakers{
+    float: left;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    position: relative;
+  }
+
+  /*Text for Column and Speakers*/
+  .column, .speakers h4 {
+    text-align: center;
+    display: block;
+    margin-top: 2px;
+    color: #50b8ce;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0px 5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+    }
+    
+    .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #d8d3d3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%); 
+    }
+
+   .nav-links li{
+      opacity: 0;
+      background-color: #50b8ce;
+   }
+
+   .burger{
+     display: block;
+   }
+
+   .nav-active{
+     transform: translateX(0%);
+   }
+  
+   @keyframes navLinkFade{
+     from{
+      opacity: 0;
+      transform: translateX(50px);
+     }
+
+     to{
+      opacity: 1;
+      transform: translateX(0px); 
+     }
+   }
+  
+  @media screen and (max-width: 768px) {
+    .column, .speakers, .speakers img, .speakers h4, .about{
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+
+/* Map Marker Icon*/
+  .fa-map-marker-alt{
+    color: #98d1dd;
+  }
+
+/* Calendar Icon */
+.fa-calendar-alt{
+  color: #98d1dd;
+}
+
+/* Dollar Sign Icon */
+.fa-dollar-sign{
+  color: #98d1dd;
+}
+
+/*Speaker Title*/
+.speaker_title{
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+  color: #50b8ce;
+  padding: 20px 20px
+}
+/*Speakers Image*/
+.speakers img{
+ 
+ display: inline-block;
+ margin-left: 20px;
+ margin-right: 20px;
+ width: 271px;
+ height: 271px;
+ position: relative;
+}
+
+/*Speaker Text
+.speakers h4{
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 250px;
+  left: 140px;
+}
+
+/*Help Today*/
+.help{
+  text-align: center;
+  margin-top: 50px;
+  color: #50b8ce;
+}
+
+.help h2{
+  font-size: 32px;
+  text-decoration: underline;
+}
+.help p{
+  font-size: 24px;
+}
+
+/*Buttons*/
+.give_btn, .sponsor_btn{
+  background-color: #dfe8ec;
+  font-size: 24px;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  border-radius: 45px;
+  border: solid 2px;
+  color: #50b8ce;
+  margin-bottom: 30px;
+}
+/*Footer*/
+.social a{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-left: 2px;
+  padding-right: 18px;
+}
+
+footer{
+  background-color: #50b8ce;
+  width: 100%;
+  padding: 25px;
+  border: 25px white;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/* ----------------About Section-------------------- */
+#about{
+  background: url("../img/AboutCover.jpg") no-repeat 0 400px;
+  min-height: 400px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+  }
