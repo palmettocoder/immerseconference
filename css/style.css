@@ -282,8 +282,59 @@ footer{
   max-height: 400px;
 }
 
+/*FAQ Section*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  text-transform: uppercase;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 
 /* Contact Us Section */
 .form {
   text-align: center;
+}
+
+
+/*Terms and Conditions*/
+.terms_privacy  h2, h3{
+  text-align: center;
+  color: #50b8ce;
+}
+
+.terms_privacy p, ul{
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  color: #000000;
 }
